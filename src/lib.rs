@@ -27,7 +27,7 @@ use tokio::sync::{oneshot, mpsc};
 
 pub use winusb::{Device, InstallConfig};
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 enum ServerMsg {
     /// Request driver installation
     Install(InstallConfig, Vec<Device>),
@@ -37,7 +37,7 @@ enum ServerMsg {
     Exit,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 enum ClientMsg {
     /// Result of installing drivers for single device
     DeviceInstall(Device, Result<(), String>),
@@ -93,7 +93,7 @@ pub struct Client {
     connection_timeout: Duration,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub enum Progress {
     /// Installation process started (client communication established)
     Started,

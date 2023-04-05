@@ -100,7 +100,7 @@ pub struct LogReceiver {
     buf: Box<[u8; 8192]>,
 }
 
-#[derive(Debug, Serialize, Deserialize)]
+#[derive(Debug, Clone, Copy, Serialize, Deserialize)]
 pub struct Window(isize);
 
 impl LogReceiver {
