@@ -1,6 +1,6 @@
 [package]
 name = "winusb-installer"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["inscrib.io <contact@inscrib.io>"]
 license = "MIT OR Apache-2.0"
@@ -17,7 +17,7 @@ futures = "0.3"
 tokio = { version = "1.26", features = ["macros", "net", "io-util", "process", "rt", "time"] }
 tokio-serde = { version = "0.8", features = ["bincode"] }
 tokio-util = { version = "0.7", features = ["compat", "codec"] }
-libwdi = { git = "https://github.com/jedrzejboczar/libwdi-rs", tag = "v0.1.0" }
+libwdi = { git = "https://github.com/jedrzejboczar/libwdi-rs", tag = "v0.1.1" }
 windows = { version = "0.46", features = [
     "Win32_Foundation",
     "Win32_UI_Shell",
