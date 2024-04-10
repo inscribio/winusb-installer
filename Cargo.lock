@@ -302,9 +302,9 @@ checksum = "830d08ce1d1d941e6b30645f1a0eb5643013d835ce3779a5fc208261dbe10f55"
 
 [[package]]
 name = "libc"
-version = "0.2.141"
+version = "0.2.153"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "3304a64d199bb964be99741b7a14d26972741915b3649639149b2479bb46f4b5"
+checksum = "9c198f91728a82281a64e1f4f9eeb25d82cb32a5de251c6bd1b5154d63a8e7bd"
 
 [[package]]
 name = "libloading"
@@ -318,8 +318,8 @@ dependencies = [
 
 [[package]]
 name = "libwdi"
-version = "0.1.1"
-source = "git+https://github.com/jedrzejboczar/libwdi-rs?tag=v0.1.1#5212294ec3e494e5d0df8b1be0934adfc09c20c0"
+version = "0.1.2"
+source = "git+https://github.com/jedrzejboczar/libwdi-rs?tag=v0.1.2#3620e82ba60c4bffcf5306a5feb49149bf2efd32"
 dependencies = [
  "libwdi-sys",
  "thiserror",
@@ -327,8 +327,8 @@ dependencies = [
 
 [[package]]
 name = "libwdi-sys"
-version = "0.1.1"
-source = "git+https://github.com/jedrzejboczar/libwdi-rs?tag=v0.1.1#5212294ec3e494e5d0df8b1be0934adfc09c20c0"
+version = "0.1.2"
+source = "git+https://github.com/jedrzejboczar/libwdi-rs?tag=v0.1.2#3620e82ba60c4bffcf5306a5feb49149bf2efd32"
 dependencies = [
  "bindgen",
 ]
@@ -362,14 +362,14 @@ checksum = "68354c5c6bd36d73ff3feceb05efa59b6acb7626617f4962be322a825e61f79a"
 
 [[package]]
 name = "mio"
-version = "0.8.6"
+version = "0.8.11"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5b9d9a46eff5b4ff64b45a9e316a6d1e0bc719ef429cbec4dc630684212bfdf9"
+checksum = "a4a650543ca06a924e8b371db273b2756685faae30f8487da1b56505a8f78b0c"
 dependencies = [
  "libc",
  "log",
  "wasi",
- "windows-sys 0.45.0",
+ "windows-sys 0.48.0",
 ]
 
 [[package]]
@@ -906,7 +906,7 @@ checksum = "1a515f5799fe4961cb532f983ce2b23082366b898e52ffbce459c86f67c8378a"
 
 [[package]]
 name = "winusb-installer"
-version = "0.1.1"
+version = "0.1.2"
 dependencies = [
  "env_logger",
  "futures",
